@@ -41,3 +41,4 @@ touch po/*.gmo
 touch po/stamp-po
 touch awkgram.c
 touch command.c
+autoreconf -fi
