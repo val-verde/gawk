@@ -108,7 +108,9 @@ base_sources = \
 	replace.c \
 	str_array.c \
 	symbol.c \
-	version.c
+	version.c \
+	pc/getid.c \
+	pc/popen.c
 
 gawk_SOURCES = $(base_sources)
 
