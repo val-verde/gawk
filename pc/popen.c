@@ -19,6 +19,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
  */
 
+#ifdef _WIN32
 #include <stdio.h>
 #include <stdlib.h>
 #include <io.h>
@@ -324,3 +325,4 @@ os_pclose( FILE * current)
     free(pipes[cur].command);
     return rval;
 }
+#endif
