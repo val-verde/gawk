@@ -9,6 +9,7 @@
  * December 2010, move to ANSI C definition for main().
  */
 
+#ifndef _WIN32
 #if HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -37,5 +38,10 @@ main(int argc, char **argv)
 #endif
 
     endpwent();
+#else
+int
+main(int argc, char **argv)
+{
+#endif
     return 0;
 }
